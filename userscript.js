@@ -32,7 +32,7 @@
 
     var switcherClass = 'awsc-switched-role-username-wrapper';
     var roleElems = document.getElementsByClassName(switcherClass);
-    if (roleElems) {
+    if (roleElems.length == 1) {
         var bgColor = roleElems[0].style.backgroundColor;
         var newBgColor = determineNewColor(bgColor);
         var navSelector = '#nav-menubar, #nav-menu-right, .nav-menu, .nav-menu-separator';
