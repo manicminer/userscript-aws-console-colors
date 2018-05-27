@@ -1,0 +1,44 @@
+// ==UserScript==
+// @name         AWS Console Colored Menu Bar
+// @namespace    io.manicminer
+// @version      0.1
+// @description  Extend AWS Console role switcher color to entire menu bar
+// @author       Tom Bamford
+// @match        https://*console.aws.amazon.com/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    function determineNewColor(rgbColor) {
+        var f = rgbColor.split(","), r = parseInt(f[0].slice(4)), g = parseInt(f[1]), b = parseInt(f[2]);
+        r /= 255; g /= 255; b /= 255;
+        var max = Math.max(r, g, b), min = Math.min(r, g, b);
+        var h, s = 1, l = 0.25;
+        if (max == min) {
+            h = s = 0; // achromatic
+        } else {
+            var d = max - min;
+            switch (max) {
+                case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+                case g: h = (b - r) / d + 2; break;
+                case b: h = (r - g) / d + 4; break;
+            }
+            h /= 6;
+        }
+        return 'hsl(' + Math.floor(h * 360) + ',' + Math.floor(s * 100) + '%,' + Math.floor(l * 100) + '%)';
+    }
+
+    var switcherClass = 'awsc-switched-role-username-wrapper';
+    var roleElems = document.getElementsByClassName(switcherClass);
+    if (roleElems) {
+        var bgColor = roleElems[0].style.backgroundColor;
+        var newBgColor = determineNewColor(bgColor);
+        var navSelector = '#nav-menubar, #nav-menu-right, .nav-menu, .nav-menu-separator';
+        var menuBarElems = document.querySelectorAll(navSelector);
+        for (var i = 0; i < menuBarElems.length; i++) {
+            menuBarElems[i].style.backgroundColor = newBgColor;
+        }
+    }
+})();
