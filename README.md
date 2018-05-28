@@ -7,3 +7,16 @@ Some screenshots:
 ![Green Screenshot](https://user-images.githubusercontent.com/251987/40589702-7896439c-61f2-11e8-89dc-45a28e45168b.png "Green Screenshot")
 ![Blue Screenshot](https://user-images.githubusercontent.com/251987/40589706-7f5cd268-61f2-11e8-8c81-17f1a789234d.png "Blue Screenshot")
 ![Red Screenshot](https://user-images.githubusercontent.com/251987/40589707-829255d4-61f2-11e8-8865-c0816606933d.png "Red Screenshot")
+
+## Installation
+
+Best used with a userscript manager such as [Greasemonkey][greasemonkey] (Firefox) or [Tampermonkey][tampermonkey] (Chrome).
+
+* [One-click install from OpenUserJs][openuserjs-install]
+* [Install directyl from GitHub][github-install]
+
+
+[greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
+[tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
+[openuserjs-install]: https://openuserjs.org/scripts/manicminer/AWS_Console_Colored_Menu_Bar
+[github-install]: https://github.com/manicminer/userscript-aws-console-colors/raw/master/aws-console-colors.user.js
