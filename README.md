@@ -15,6 +15,10 @@ Best used with a userscript manager such as [Greasemonkey][greasemonkey] (Firefo
 * [One-click install from OpenUserJs][openuserjs-install]
 * [Install directly from GitHub][github-install]
 
+## Customizing
+
+The script manipulates the saturation and luminosity of the role switcher background color. Edit the script and adjust the values of `s` and `l` (near the top) - higher saturation makes a bolder color, higher luminosity makes a brighter color.
+
 
 [greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
 [tampermonkey]: https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo

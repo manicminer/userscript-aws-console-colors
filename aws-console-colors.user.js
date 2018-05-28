@@ -13,11 +13,13 @@
 (function() {
     'use strict';
 
+    // Change values of s and l to adjust the saturation and luminosity of the background color
+    var s = 1.0, l = 0.25;
+
     function determineNewColor(rgbColor) {
         var f = rgbColor.split(","), r = parseInt(f[0].slice(4)), g = parseInt(f[1]), b = parseInt(f[2]);
         r /= 255; g /= 255; b /= 255;
-        var max = Math.max(r, g, b), min = Math.min(r, g, b);
-        var h, s = 1, l = 0.25;
+        var h, max = Math.max(r, g, b), min = Math.min(r, g, b);
         if (max == min) {
             h = s = 0; // achromatic
         } else {
@@ -44,3 +46,5 @@
         }
     }
 })();
+
+/* vim: set ft=javascript ts=4 sts=4 sw=4 et: */
