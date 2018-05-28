@@ -13,7 +13,7 @@ Some screenshots:
 Best used with a userscript manager such as [Greasemonkey][greasemonkey] (Firefox) or [Tampermonkey][tampermonkey] (Chrome).
 
 * [One-click install from OpenUserJs][openuserjs-install]
-* [Install directyl from GitHub][github-install]
+* [Install directly from GitHub][github-install]
 
 
 [greasemonkey]: https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/
