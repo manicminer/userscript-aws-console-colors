@@ -7,6 +7,7 @@
 // @icon         https://user-images.githubusercontent.com/251987/40598271-067fbe3c-6247-11e8-89c2-2e0a4d2a1464.png
 // @license      MIT
 // @match        https://*console.aws.amazon.com/*
+// @match        https://*.console.aws.amazon.com/*
 // @grant        none
 // ==/UserScript==
 
