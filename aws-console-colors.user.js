@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         AWS Console Colored Menu Bar
 // @namespace    io.manicminer
-// @version      0.2.2
+// @version      0.2.3
 // @description  Extend AWS Console role switcher color to entire menu bar
 // @author       Tom Bamford
 // @icon         https://user-images.githubusercontent.com/251987/40598271-067fbe3c-6247-11e8-89c2-2e0a4d2a1464.png
 // @license      MIT
-// @match        https://*console.aws.amazon.com/*
+// @match        https://console.aws.amazon.com/*
 // @match        https://*.console.aws.amazon.com/*
 // @grant        none
 // ==/UserScript==
